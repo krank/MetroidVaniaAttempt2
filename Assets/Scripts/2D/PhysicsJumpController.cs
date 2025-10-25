@@ -28,7 +28,7 @@ public class PhysicsJumpController : JumpController
 
   void Update()
   {
-    if (rBody.velocity.y < 0)
+    if (rBody.linearVelocity.y < 0)
     {
       rBody.gravityScale = fallGravityScale;
       CurrentState = JumpState.Falling;
@@ -37,7 +37,7 @@ public class PhysicsJumpController : JumpController
     {
       rBody.gravityScale = defaultGravityScale;
 
-      if (rBody.velocity.y > 0)
+      if (rBody.linearVelocity.y > 0)
       {
         CurrentState = JumpState.Jumping;
       }
