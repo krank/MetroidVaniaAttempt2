@@ -848,7 +848,7 @@ MonoBehaviour:
   targetObject: {fileID: 59198720}
   origoObject: {fileID: 190398566}
   followX: 1
-  followY: 0
+  followY: 1
   maxSpeed: 10
   maxEasingDistance: 3
   easingCurve:
