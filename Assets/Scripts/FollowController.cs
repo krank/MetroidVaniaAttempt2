@@ -67,7 +67,6 @@ public class FollowController : MonoBehaviour
 
   void ApplyOffset()
   {
-    // transform.position = origoObject.position + offsetLastFrame;
     transform.position = new(
       followX ? origoObject.position.x + offsetLastFrame.x : transform.position.x,
       followY ? origoObject.position.y + offsetLastFrame.y : transform.position.y,
